@@ -1,0 +1,263 @@
+/* Reset and basic styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Container */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styles */
+.header {
+    background-color: #004466;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.header nav ul {
+    list-style-type: none;
+}
+
+.header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero section styles */
+.hero {
+    background: url('https://source.unsplash.com/960x400/?technology,security') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero .btn {
+    padding: 12px 25px;
+    background-color: #ff5733;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: #ff6f50;
+}
+
+/* Features section styles */
+.features {
+    background-color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #004466;
+}
+
+.feature-item {
+    margin: 40px 0;
+}
+
+.feature-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #ff5733;
+}
+
+.feature-item p {
+    font-size: 1.2rem;
+}
+
+/* Testimonials section styles */
+.testimonials {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #004466;
+}
+
+.testimonial-item {
+    margin: 40px 0;
+    font-style: italic;
+}
+
+.testimonial-item cite {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* CTA section styles */
+.cta {
+    background-color: #333;
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #ff5733;
+}
+
+.cta p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+}
+
+.cta .btn {
+    padding: 12px 25px;
+    background-color: #ff5733;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta .btn:hover {
+    background-color: #ff6f50;
+}
+
+/* Signup section styles */
+.signup {
+    background-color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.signup h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #004466;
+}
+
+.signup form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.signup label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.signup input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.signup .btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #004466;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.signup .btn:hover {
+    background-color: #006699;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #004466;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer p {
+    margin-bottom: 10px;
+}
+
+.footer nav ul {
+    list-style-type: none;
+}
+
+.footer nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.footer nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.footer nav ul li a:hover {
+    text-decoration: underline;
+}
