@@ -3,35 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Project Management Tool</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="calculator">
-        <input type="text" id="display" class="display" disabled>
-        <div class="buttons">
-            <div class="button backspace" onclick="backspace()">←</div>
-            <div class="button clear" onclick="clearDisplay()">AC</div>
-            <div class="button operator" onclick="appendToDisplay('%')">%</div>
-            <div class="button operator" onclick="appendToDisplay('/')">÷</div>
-            <div class="button" onclick="appendToDisplay('7')">7</div>
-            <div class="button" onclick="appendToDisplay('8')">8</div>
-            <div class="button" onclick="appendToDisplay('9')">9</div>
-            <div class="button operator" onclick="appendToDisplay('*')">×</div>
-            <div class="button" onclick="appendToDisplay('4')">4</div>
-            <div class="button" onclick="appendToDisplay('5')">5</div>
-            <div class="button" onclick="appendToDisplay('6')">6</div>
-            <div class="button operator" onclick="appendToDisplay('-')">-</div>
-            <div class="button" onclick="appendToDisplay('1')">1</div>
-            <div class="button" onclick="appendToDisplay('2')">2</div>
-            <div class="button" onclick="appendToDisplay('3')">3</div>
-            <div class="button operator" onclick="appendToDisplay('+')">+</div>
-            <div class="button zero" onclick="appendToDisplay('0')">0</div>
-            <div class="button" onclick="appendToDisplay('.')">.</div>
-            <div class="button equals" onclick="calculate()">=</div>
-            
+    <header class="header">
+        <div class="container">
+            <h1>Project Management Tool</h1>
+            <nav>
+                <ul>
+                    <li><a href="#dashboard">Dashboard</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#tasks">Tasks</a></li>
+                </ul>
+            </nav>
         </div>
-    </div>
+    </header>
+
+    <main>
+        <section id="dashboard" class="dashboard">
+            <div class="container">
+                <h2>Dashboard</h2>
+                <p>Overview of your projects and tasks.</p>
+                <div class="card">
+                    <h3>Project 1</h3>
+                    <p>Progress: 50%</p>
+                </div>
+                <div class="card">
+                    <h3>Project 2</h3>
+                    <p>Progress: 75%</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="project-form">
+                    <h3>Create a new project</h3>
+                    <input type="text" id="projectName" placeholder="Project Name">
+                    <textarea id="projectDescription" placeholder="Project Description"></textarea>
+                    <button onclick="createProject()">Create Project</button>
+                </div>
+                <div id="projectList" class="list"></div>
+            </div>
+        </section>
+
+        <section id="tasks" class="tasks">
+            <div class="container">
+                <h2>Tasks</h2>
+                <div class="task-form">
+                    <h3>Create a new task</h3>
+                    <input type="text" id="taskName" placeholder="Task Name">
+                    <input type="date" id="taskDeadline">
+                    <button onclick="createTask()">Create Task</button>
+                </div>
+                <div id="taskList" class="list"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Project Management Tool. All rights reserved.</p>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
