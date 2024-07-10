@@ -3,82 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Encryptix - Secure Your Digital World</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <h1>Encryptix</h1>
-            <nav>
-                <ul>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#testimonials">Testimonials</a></li>
-                    <li><a href="#cta">Get Started</a></li>
-                </ul>
-            </nav>
+    <div class="calculator">
+        <input type="text" id="display" class="display" disabled>
+        <div class="buttons">
+            <div class="button backspace" onclick="backspace()">←</div>
+            <div class="button clear" onclick="clearDisplay()">AC</div>
+            <div class="button operator" onclick="appendToDisplay('%')">%</div>
+            <div class="button operator" onclick="appendToDisplay('/')">÷</div>
+            <div class="button" onclick="appendToDisplay('7')">7</div>
+            <div class="button" onclick="appendToDisplay('8')">8</div>
+            <div class="button" onclick="appendToDisplay('9')">9</div>
+            <div class="button operator" onclick="appendToDisplay('*')">×</div>
+            <div class="button" onclick="appendToDisplay('4')">4</div>
+            <div class="button" onclick="appendToDisplay('5')">5</div>
+            <div class="button" onclick="appendToDisplay('6')">6</div>
+            <div class="button operator" onclick="appendToDisplay('-')">-</div>
+            <div class="button" onclick="appendToDisplay('1')">1</div>
+            <div class="button" onclick="appendToDisplay('2')">2</div>
+            <div class="button" onclick="appendToDisplay('3')">3</div>
+            <div class="button operator" onclick="appendToDisplay('+')">+</div>
+            <div class="button zero" onclick="appendToDisplay('0')">0</div>
+            <div class="button" onclick="appendToDisplay('.')">.</div>
+            <div class="button equals" onclick="calculate()">=</div>
+            
         </div>
-    </header>
+    </div>
 
-    <section class="hero">
-        <div class="container">
-            <h2>Secure Your Digital World with Encryptix</h2>
-            <p>Leading solutions to protect your data and ensure privacy. Your security, our priority.</p>
-            <a href="#cta" class="btn">Learn More</a>
-        </div>
-    </section>
-
-    <section class="features" id="features">
-        <div class="container">
-            <h2>Our Features</h2>
-            <div class="feature-item">
-                <h3>Data Encryption</h3>
-                <p>Advanced encryption to keep your data safe from unauthorized access.</p>
-            </div>
-            <div class="feature-item">
-                <h3>Secure Backup</h3>
-                <p>Reliable backup solutions to ensure your data is never lost.</p>
-            </div>
-            <div class="feature-item">
-                <h3>Privacy Protection</h3>
-                <p>Comprehensive tools to protect your privacy online and offline.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="testimonials" id="testimonials">
-        <div class="container">
-            <h2>What Our Clients Say</h2>
-            <div class="testimonial-item">
-                <p>"Encryptix has revolutionized our data security approach. Highly recommend!"</p>
-                <cite>John Doe, CEO of SecureTech</cite>
-            </div>
-            <div class="testimonial-item">
-                <p>"Their encryption solutions are top-notch. We've never felt safer."</p>
-                <cite>Jane Smith, CTO of DataGuard</cite>
-            </div>
-        </div>
-    </section>
-
-    <section class="cta" id="cta">
-        <div class="container">
-            <h2>Get Started with Encryptix</h2>
-            <p>Sign up now to secure your data with our cutting-edge solutions.</p>
-            <a href="signup.html" class="btn">Sign Up</a>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Encryptix. All rights reserved.</p>
-            <nav>
-                <ul>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms of Service</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-            </nav>
-        </div>
-    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
